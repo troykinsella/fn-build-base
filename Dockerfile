@@ -3,5 +3,7 @@ MAINTAINER Troy Kinsella
 
 RUN apt-get -y update \
  && apt-get -y install \
-      ruby \
-      nodejs-legacy
+      git \
+      nodejs-legacy \
+      ruby
+
