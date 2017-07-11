@@ -3,12 +3,10 @@ MAINTAINER Troy Kinsella
 
 RUN apk add --no-cache \
   ca-certificates \
+  build-base \
   docker \
-  gcc \
   git \
-  make \
   nodejs \
   ruby \
   openssh-client \
   openssl
-
