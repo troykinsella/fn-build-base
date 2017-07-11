@@ -1,12 +1,10 @@
-FROM golang:alpine
+FROM golang:latest
 MAINTAINER Troy Kinsella
 
-RUN apk add --no-cache \
-  ca-certificates \
-  build-base \
-  docker \
-  git \
-  nodejs \
-  ruby \
-  openssh-client \
-  openssl
+RUN apt-get -y update \
+ && apt-get -y install \
+      build-essential \
+      docker \
+      git \
+      nodejs-legacy \
+      ruby
