@@ -7,4 +7,5 @@ RUN apt-get -y update \
       docker \
       git \
       nodejs-legacy \
+      postgresql-client \
       ruby
