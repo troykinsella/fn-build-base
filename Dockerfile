@@ -8,7 +8,7 @@ RUN apt-get -y update \
       git \
       nodejs-legacy \
       postgresql-client \
-      ruby
+      ruby \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
