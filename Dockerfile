@@ -4,6 +4,8 @@ MAINTAINER Troy Kinsella
 ADD https://archive.org/download/zeromq_4.1.4/zeromq-4.1.4.tar.gz /tmp/
 ADD https://github.com/google/protobuf/releases/download/v3.4.0/protoc-3.4.0-linux-x86_64.zip /usr/local/
 
+ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig
+
 RUN apt-get -y update \
  && apt-get -y install \
       build-essential \
@@ -26,5 +28,3 @@ RUN apt-get -y update \
  && ldconfig \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
-
-ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig
